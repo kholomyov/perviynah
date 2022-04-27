@@ -1,8 +1,80 @@
-table {
-  color: green;
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px
 }
-[href="#yait"] {
-  color: orange;
-.zalupa {
-  color: purple
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+
+/* Container
+=======================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+
+
+/* Header
+==========================*/
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+  align-items: center;
+  border-bottom: 1px solid #515369
+
+}
+
+
+/* Nav
+===========================*/
+
+.nav {
+  display: flex;
+  font-size: 14 px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  margin-left: 70px;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.75;
+
+  transition: opacity .1s
+  linear;
+}
+
+.nav__link:hover {
+  opacity: 1;
+}
+
+.nav__link:first-child {
+  margin-left: 0px;
+}
+
+/* Intro
+===========================*/
+
+.intro {
+  height: 750px;
 }
